@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+        .navbar-brand{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        table.in-ring{
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .in-ring-text{
+            text-align: center
+        }
+            
+        .promo{
+            margin-left: auto;
+            margin-right: auto
+        }
+        
+        .match-carry{
+            margin-left: auto;
+            margin-right: auto
+        }
+        .navbar{
+            background-color: #362F2F;
+            font-color: white
+        }
+    </style>
+      </head>
+      <body>
+            <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/">Heel/Face</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/signup">Sign Up</a></li>
+                                <li><a href="/login">Log In</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find a Wrestler<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/signup">Design</a></li>
+                                        <li><a href="#">Development</a></li>
+                                        <li><a href="#">Consulting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+<h1>Heel/Face Signup</h1>
+<div class='row'>
+<div class='col-xs-12'>
+
+<form action="/register" method="post" class="signup">
+    <table>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+                <input name="email" type="email" value="{{ email }}">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+                <input name="password" type="password">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="verify">Verify Password</label></td>
+            <td>
+                <input name="verify" type="password">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Register">
+</form>
+</div>
+</div>
+</body>

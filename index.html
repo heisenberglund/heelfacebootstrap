@@ -16,11 +16,19 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white
     }
-    table.rate{
+    table.in-ring{
         margin-left: auto;
         margin-right: auto;
     }
         
+    table.promo{
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    table.match-carry{
+        margin-left: auto;
+        margin-right: auto
     }
     </style>
     <title>HEEL-FACE</title>
@@ -30,7 +38,14 @@
 
     </header>
     <body>
-        <table name='rate' class='rate'>
+
+        {% block content %}
+        {% endblock %}
+
+
+
+        <table name='in-ring' class='in-ring'>
+            <label>In Ring Ability:</label>
             <tbody>
             <tc>
                 <tr>
@@ -62,6 +77,74 @@
             </tc>
             </tbody>
         </table>
+    </br>
+    <table name='promo' class='promo'>
+        <label>Promo Ability:</label>
+        <tbody>
+        <tc>
+            <tr>
+            <td><label name='1' value='1' class='1'>1</label></td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        </tc>
+        <tc>
+            <tr>
+                <td><input type="radio" name="1" value="1" /></td>
+                <td><input type="radio" name="2" value="2" /></td>
+                <td><input type="radio" name="3" value="3" /></td>
+                <td><input type="radio" name="4" value="4" /></td>
+                <td><input type="radio" name="5" value="5" /></td>
+                <td><input type="radio" name="6" value="6" /></td>
+                <td><input type="radio" name="7" value="7" /></td>
+                <td><input type="radio" name="8" value="8" /></td>
+                <td><input type="radio" name="9" value="9" /></td>
+                <td><input type="radio" name="10" value="10" /></td>
+            </tr>
+        </tc>
+        </tbody>
+    </table>
+</br>
+<table name='match-carry' class='match-carry'>
+    <label>Match Carrying Ability:</label>
+    <tbody>
+    <tc>
+        <tr>
+        <td><label name='1' value='1' class='1'>1</label></td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+    </tc>
+    <tc>
+        <tr>
+            <td><input type="radio" name="1" value="1" /></td>
+            <td><input type="radio" name="2" value="2" /></td>
+            <td><input type="radio" name="3" value="3" /></td>
+            <td><input type="radio" name="4" value="4" /></td>
+            <td><input type="radio" name="5" value="5" /></td>
+            <td><input type="radio" name="6" value="6" /></td>
+            <td><input type="radio" name="7" value="7" /></td>
+            <td><input type="radio" name="8" value="8" /></td>
+            <td><input type="radio" name="9" value="9" /></td>
+            <td><input type="radio" name="10" value="10" /></td>
+        </tr>
+    </tc>
+    </tbody>
+</table>
     </body>
     <footer class='footer'>
         Created by: Bobby Thunder

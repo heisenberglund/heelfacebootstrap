@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    .navbar-brand{
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    table.in-ring{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .in-ring-text{
+        text-align: center
+    }
+        
+    .promo{
+        margin-left: auto;
+        margin-right: auto
+    }
+    
+    .match-carry{
+        margin-left: auto;
+        margin-right: auto
+    }
+    .navbar{
+        background-color: #362F2F;
+        text-decoration-color: white
+    }
+    .one{
+        color: blue;
+        font-weight: 900
+    }
+    .two{color: #0059FF;
+    font-weight:900
+
+    }
+    .three{
+        color:#0084FF;
+        font-weight: 900
+    }
+    .four{
+        color:#0099FF;
+        font-weight:900
+    }.five{
+        color:#00E1FF;
+        font-weight:900
+    }
+    .six{
+        color:#51FF00;
+        font-weight:900
+    }
+    .seven{
+        color:#7BFF00;
+        font-weight:900
+    }
+    .eight{
+        color:#FFE600;
+        font-weight:900
+    }
+    .nine{
+        color:#FF8800;
+        font-weight:900
+    }
+    .ten{
+        color:red;
+        font-weight: 900
+
+    }
+    .photo{
+        object-position: center
+    }
+</style>
+  </head>
+  <body>
+        <nav class="navbar navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Heel/Face</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/signup">Sign Up</a></li>
+                            <li><a href='/login'>Log In</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find a Wrestler<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/signup">Design</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Consulting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            {% block content %}
+            {% endblock %}
+    
+    <img class='photo' src='http://inspireprowrestling.com/wp-content/uploads/2013/11/Gary-Jay_added-to_Ecstasy-of-Gold_breaking-news.jpg' />
+    
+            <table name='in-ring' class='in-ring'>
+                <div class='row'>
+                <div class='in-ring-text col-xs-12'>In Ring Ability:</div>
+                <tbody>
+                </div>
+                <tc>
+                    <tr>
+                    <td class='one'>1</label></td>
+                    <td class='two'>2</td>
+                    <td class='three'>3</td>
+                    <td class='four'>4</td>
+                    <td class='five'>5</td>
+                    <td class='six'>6</td>
+                    <td class='seven'>7</td>
+                    <td class='eight'>8</td>
+                    <td class='nine'>9</td>
+                    <td class='ten'>10</td>
+                </tr>
+                </tc>
+                <tc>
+                    <tr>
+                        <td><input type="radio" name="1" value="1" /></td>
+                        <td><input type="radio" name="2" value="2" /></td>
+                        <td><input type="radio" name="3" value="3" /></td>
+                        <td><input type="radio" name="4" value="4" /></td>
+                        <td><input type="radio" name="5" value="5" /></td>
+                        <td><input type="radio" name="6" value="6" /></td>
+                        <td><input type="radio" name="7" value="7" /></td>
+                        <td><input type="radio" name="8" value="8" /></td>
+                        <td><input type="radio" name="9" value="9" /></td>
+                        <td><input type="radio" name="10" value="10" /></td>
+                    </tr>
+                </tc>
+                </tbody>
+            </table>
+        </br>
+        <table name='promo' class='promo'>
+            <div class='row'>
+            <div class='in-ring-text col-xs-12'>Promo Ability:</div>
+            </div>
+            <tbody>
+            <tc>
+                <tr>
+                        <td class='one'>1</label></td>
+                        <td class='two'>2</td>
+                        <td class='three'>3</td>
+                        <td class='four'>4</td>
+                        <td class='five'>5</td>
+                        <td class='six'>6</td>
+                        <td class='seven'>7</td>
+                        <td class='eight'>8</td>
+                        <td class='nine'>9</td>
+                        <td class='ten'>10</td>
+            </tr>
+            </tc>
+            <tc>
+                <tr>
+                    <td><input type="radio" name="1" value="1" /></td>
+                    <td><input type="radio" name="2" value="2" /></td>
+                    <td><input type="radio" name="3" value="3" /></td>
+                    <td><input type="radio" name="4" value="4" /></td>
+                    <td><input type="radio" name="5" value="5" /></td>
+                    <td><input type="radio" name="6" value="6" /></td>
+                    <td><input type="radio" name="7" value="7" /></td>
+                    <td><input type="radio" name="8" value="8" /></td>
+                    <td><input type="radio" name="9" value="9" /></td>
+                    <td><input type="radio" name="10" value="10" /></td>
+                </tr>
+            </tc>
+            </tbody>
+        </table>
+    </br>
+    <table name='match-carry' class='match-carry'>
+        <div class='row'>
+        <div class='col-xs-12 in-ring-text'>Match Carrying Ability:</div>
+        </div>
+        <tbody>
+        <tc>
+            <tr>
+                    <td class='one'>1</label></td>
+                    <td class='two'>2</td>
+                    <td class='three'>3</td>
+                    <td class='four'>4</td>
+                    <td class='five'>5</td>
+                    <td class='six'>6</td>
+                    <td class='seven'>7</td>
+                    <td class='eight'>8</td>
+                    <td class='nine'>9</td>
+                    <td class='ten'>10</td>
+        </tr>
+        </tc>
+        <tc>
+            <tr>
+                <td><input type="radio" name="1" value="1" /></td>
+                <td><input type="radio" name="2" value="2" /></td>
+                <td><input type="radio" name="3" value="3" /></td>
+                <td><input type="radio" name="4" value="4" /></td>
+                <td><input type="radio" name="5" value="5" /></td>
+                <td><input type="radio" name="6" value="6" /></td>
+                <td><input type="radio" name="7" value="7" /></td>
+                <td><input type="radio" name="8" value="8" /></td>
+                <td><input type="radio" name="9" value="9" /></td>
+                <td><input type="radio" name="10" value="10" /></td>
+            </tr>
+        </tc>
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
